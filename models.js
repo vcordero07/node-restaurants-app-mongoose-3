@@ -17,7 +17,8 @@ const restaurantSchema = mongoose.Schema({
     date: Date,
     grade: String,
     score: Number
-  }]
+  }],
+  restaurant_id: String
 });
 
 // *virtuals* (http://mongoosejs.com/docs/guide.html#virtuals)
