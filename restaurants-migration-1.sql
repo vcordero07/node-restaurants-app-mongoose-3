@@ -20,7 +20,7 @@ CREATE TABLE grades (
     "date" timestamptz NOT NULL,
     grade text NOT NULL,
     score integer NOT NULL,
-    restaurant_id integer REFERENCES restaurants ON DELETE CASCADE
+    restaurant_id integer REFERENCES restaurants
 );
 
 END;
