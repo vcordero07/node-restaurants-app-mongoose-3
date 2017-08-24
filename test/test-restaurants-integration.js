@@ -267,7 +267,6 @@ describe('Restaurants API resource', function() {
 
       return Restaurant
         .findOne()
-        .exec()
         .then(function(_restaurant) {
           restaurant = _restaurant;
           return chai.request(app).delete(`/restaurants/${restaurant.id}`);
